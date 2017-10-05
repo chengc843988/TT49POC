@@ -1,0 +1,205 @@
+=========================================================
+
+ROM Version: 0.2
+
+Build ToolChain Version: gcc version 4.8.3 (Realtek ASDK-4.8.3p1 Build 2003)
+
+=========================================================
+Check boot type form eFuse
+SPI Initial
+Image1 length: 0x3a88, Image Addr: 0x10000bc8
+Image1 Validate OK, Going jump to Image1
+BOOT from Flash:YES
+===== Enter Image 1 ====
+SDR Controller Init
+
+load NEW fw 0
+Flash Image2:Addr 0xb000, Len 57120, Load to SRAM 0x10006000
+Image3 length: 0x6105, Image3 Addr: 0x30000000
+Img2 Sign: RTKWin, InfaStart @ 0x10006049
+===== Enter Image 2 ====
+-------Peer to Peer--------
+init PN532 NFC
+-------Peer to Peer HCE--------
+
+Sending(24):  0x0 0x0 0xFF 0x2 0xFFFFFFFE 0xD4 0x2 0xFFFFFF2A 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Reading:  0x0 0x0 0xFF 0x6 0xFA 0xD5 0x3 0x32 0x1 0x6 0x7 0xE8
+PN532 Version=838927879
+Found chip PN532
+Firmware ver. 1.6
+
+Sending(24):  0x0 0x0 0xFF 0x5 0xFFFFFFFB 0xD4 0x14 0x1 0x14 0x1 0xFFFFFF02 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Reading:  0x0 0x0 0xFF 0x2 0xFE 0xD5 0x15 0x16
+run PN532 NFC...
+init ameba NFC
+run ameba NFC...
+
+Run main thread...., then sleep: 847
+
+Run main thread...., then sleep: 3857
+PN532   ==> Try to read ISO14443A tag
+
+Sending(24): Ameb 0x0 0x0 0xFF 0x4 0xFFFFFFFC 0xD4 0x4A 0x1 0x0 0xFFFFFFE1 0x0
+IRQ received
+a NFCReading:  tes 0x0 0x0 0xFFt= 0x0 0xFF842 0x0
+Waiting for IRQ (indicates card presence)
+/842
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 6866
+Ameba NFC test=3942/3942
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 9875
+Ameba NFC test=7061/7061
+Update URL message:com.tradevan.tt49.mobileoaapp
+Reading:  0x0 0x0 0xFF 0x11 0xEF 0xD5 0x4B 0x1 0x1 0x0 0x4 0x60 0x4 0x1 0x2 0x3 0x4 0x5 0x78 0x80
+Found an ISO14443A card
+  UID Length: 4 bytes
+  UID Value : 1 2 3 4
+                      --------------------------------------------------
+                                                                        This tag maybe ANDROID
+
+Sending(24):  0x0 0x0 0xFF 0x10 0xFFFFFFF0 0xD4 0x40 0x0 0x0 0xA4 0x4 0x0 0x7 0xF0 0x1 0x2 0x3 0x4 0x5 0x6 0x0 0xFFFFFF38 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Reading:  0x0 0x0 0xFF 0x3 0xFD 0xD5 0x41 0x27 0xC3 0x0 0x4 0x0 0x7 0xF0 0x1 0x2 0x3 0x4 0x5 0x6 0x0 0x38 0x2E 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF
+Status code indicates an error
+Data exchange len=200, success= 0
+Failed sending SELECT AID
+
+Run main thread...., then sleep: 12884
+Ameba NFC test=10180/10180
+Update URL message:com.tradevan.tt49.mobileoaapp
+PN532   ==> Try to read ISO14443A tag
+
+Sending(24):  0x0 0x0 0xFF 0x4 0xFFFFFFFC 0xD4 0x4A 0x1 0x0 0xFFFFFFE1 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Waiting for IRQ (indicates card presence)
+Reading:  0x0 0x0 0xFF 0x11 0xEF 0xD5 0x4B 0x1 0x1 0x0 0x4 0x60 0x4 0x1 0x2 0x3 0x4 0x5 0x78 0x80
+Found an ISO14443A card
+  UID Length: 4 bytes
+  UID Value : 1 2 3 4
+                      --------------------------------------------------
+                                                                        This tag maybe ANDROID
+
+Sending(24):  0x0 0x0 0xFF 0x10 0xFFFFFFF0 0xD4 0x40 0x0 0x0 0xA4 0x4 0x0 0x7 0xF0 0x1 0x2 0x3 0x4 0x5 0x6 0x0 0xFFFFFF38 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Reading:  0x0 0x0 0xFF 0x3 0xFD 0xD5 0x41 0x27 0xC3 0x0 0x4 0x0 0x7 0xF0 0x1 0x2 0x3 0x4 0x5 0x6 0x0 0x38 0x2E 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF
+Status code indicates an error
+Data exchange len=200, success= 0
+Failed sending SELECT AID
+
+Run main thread...., then sleep: 15894
+Ameba NFC test=13299/13299
+Update URL message:com.tradevan.tt49.mobileoaapp
+PN532   ==> Try to read ISO14443A tag
+
+Sending(24):  0x0 0x0 0xFF 0x4 0xFFFFFFFC 0xD4 0x4A 0x1 0x0 0xFFFFFFE1 0x0
+IRQ received
+Reading:  0x0 0x0 0xFF 0x0 0xFF 0x0
+Waiting for IRQ (indicates card presence)
+
+Run main thread...., then sleep: 18904
+Ameba NFC test=16418/16418
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 21914
+Ameba NFC test=19537/19537
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 24924
+Ameba NFC test=22656/22656
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 27934
+Ameba NFC test=25775/25775
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 30944
+Ameba NFC test=28894/28894
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 33954
+Ameba NFC test=32013/32013
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 36964
+Ameba NFC test=35132/35132
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 39974
+Ameba NFC test=38251/38251
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 42984
+Ameba NFC test=41370/41370
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 45994
+Ameba NFC test=44489/44489
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 49004
+Ameba NFC test=47608/47608
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 52014
+Ameba NFC test=50727/50727
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 55024
+Ameba NFC test=53846/53846
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 58034
+Ameba NFC test=56965/56965
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 61044
+Ameba NFC test=60084/60084
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 64054
+Ameba NFC test=63203/63203
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 67064
+Ameba NFC test=66322/66322
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 70074
+Ameba NFC test=69441/69441
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 73084
+Ameba NFC test=72560/72560
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 76094
+Ameba NFC test=75679/75679
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 79104
+Ameba NFC test=78798/78798
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 82114
+Ameba NFC test=81917/81917
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 85124
+
+Run main thread...., then sleep: 88134
+Ameba NFC test=85036/85036
+Update URL message:com.tradevan.tt49.mobileoaapp
+
+Run main thread...., then sleep: 91144
+Ameba NFC test=88164/88164
+Update URL message:com.tradevan.tt49.mobileoaapp
